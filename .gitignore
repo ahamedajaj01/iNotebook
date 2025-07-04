@@ -1,0 +1,26 @@
+# Node backend
+/backend/node_modules/
+/backend/.env
+/backend/npm-debug.log
+/backend/yarn-error.log
+
+# React frontend
+/frontend/node_modules/
+/frontend/.env
+/frontend/build/
+/frontend/npm-debug.log
+/frontend/yarn-error.log
+
+# MacOS files (optional)
+.DS_Store
+
+# Logs
+*.log
+
+# Optional IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
