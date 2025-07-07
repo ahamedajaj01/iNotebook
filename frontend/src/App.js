@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState} from "react";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./component/Home";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
@@ -13,10 +13,11 @@ import Login from "./component/auth/Login";
 import PublicRoute from "./component/PublicRoute"; // 👈 import it
 import PrivateRoute from "./component/PrivateRoute"; // 👈 import it
 import ResetPassword from "./component/model/ResetPassword";
+import TitleHandler from "./TitleHandler";
 
 function App() {
   const [alert, setAlert] = useState(null);
-
+ 
   const showAlert = (message, type = "success") => {
     setAlert({ message, type });
     setTimeout(() => {
@@ -29,6 +30,7 @@ function App() {
       <Router>
         {/* Top Navbar */}
         <Navbar showAlert={showAlert} />
+      <TitleHandler /> {/* Handle title updates here */}
 
         {/* ✅ Global Alert + Routes inside container */}
         <div className="container mt-3">
