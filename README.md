@@ -5,8 +5,7 @@
 ---
 
 ## 🌐 Live Demo
-
-> Coming Soon... (Optional: Add your deployed link here)
+https://i-notebook-beta-sable.vercel.app/
 
 ---
 
