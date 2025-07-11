@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import ForgotPassword from "../model/ForgotPassword";
 
 export default function Login({ showAlert }) {
@@ -128,6 +128,14 @@ export default function Login({ showAlert }) {
         <button type="submit" className="btn btn-primary w-100">
           🔐 Login
         </button>
+         <div>
+                  <p className="text-muted text-center">
+                    Don't have an account?{" "}
+                    <Link to="/signup" className="text-decoration-none">
+                      Sign up
+                    </Link>
+                  </p>
+                </div>
       </form>
     </div>
           <ForgotPassword />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Signup({ showAlert }) {
       const [showPassword, setShowPassword] = useState(false);
@@ -73,6 +73,10 @@ export default function Signup({ showAlert }) {
   };
 
   return (
+    <>
+ 
+
+    {/* Signup Form */}
     <div
       className="container d-flex justify-content-center align-items-center"
       style={{ minHeight: "80vh" }}
@@ -170,11 +174,23 @@ export default function Signup({ showAlert }) {
             required
           />
         </div>
+        
 
         <button type="submit" className="btn btn-primary w-100">
           🚀 Create Account
         </button>
+        <div>
+          <p className="text-muted text-center">
+            Already have an account?{" "}
+            <Link to="/login" className="text-decoration-none">
+              Login
+            </Link>
+          </p>
+        </div>
       </form>
     </div>
+    {/* End of Signup Form */}
+
+    </>
   );
 }
