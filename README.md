@@ -11,7 +11,7 @@ https://i-notebook-beta-sable.vercel.app/
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, React Router, Context API, Tailwind CSS / Bootstrap (if used)
+- **Frontend:** React, React Router, Context API, Bootstrap
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB (with Mongoose)
 - **Authentication:** JWT-based secure login/signup
