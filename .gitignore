@@ -24,3 +24,5 @@
 *.ntvs*
 *.njsproj
 *.sln
+config.bat
+node_modules
